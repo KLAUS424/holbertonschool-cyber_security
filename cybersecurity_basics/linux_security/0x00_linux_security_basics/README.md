@@ -1,1 +1,1 @@
- linux basics commands
+MANDATORY READMEEEEE
