@@ -1,1 +1,1 @@
-17	2.571780821	192.168.17.1	224.0.0.22	IGMPv3	60	Membership Report / Leave group 224.0.0.252
+icmp || ip.proto == 1 || ip.proto == 2 || ip.proto == 6 || ip.proto == 17
