@@ -1,1 +1,1 @@
-udp.dstport == 40125 || (icmp.type == 3 && icmp.code == 3)
+udp.dstport == 7 || (icmp.type == 3 && icmp.code == 3)
