@@ -1,0 +1,1 @@
+17	2.571780821	192.168.17.1	224.0.0.22	IGMPv3	60	Membership Report / Leave group 224.0.0.252
