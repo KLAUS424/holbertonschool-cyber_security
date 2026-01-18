@@ -2,10 +2,8 @@
 
 hash="${1#{xor\}}"
 
-echo "$hash" | base64 -d | while IFS= read -r -n1 char; do
-    if [ -n "$char" ]; then
-        byte=$(printf '%d' "'$char")
-        printf "\\$(printf '%03o' $((byte ^ 95)))"
-    fi
+printf '%s' "$hash" | base64 -d | while IFS= read -r -d '' -n1 char; do
+    byte=$(printf '%d' "'$char")
+    printf '%b' "\\x$(printf '%02x' $((byte ^ 95)))"
 done
-echo
+
